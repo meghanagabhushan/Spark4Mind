@@ -1,0 +1,20 @@
+<ion-view title="Login" id="page2">
+    <ion-content padding="true" style="background: url(img/ocean_sand_beach.jpg) no-repeat center;background-size:cover;" class="has-header">
+	<div class="spacer" style="width: 300px; height: 29px;"></div>
+        <form id="login-form1" class="list">
+            <ion-list id="login-list1">
+                <label class="item item-input" id="login-input1">
+                    <input type="text" placeholder="Username">
+                </label>
+                <label class="item item-input" id="login-input2">
+                    <input type="password" placeholder="Password">
+                </label>
+            </ion-list>
+            <div class="spacer" style="height: 40px;"></div>
+            <a ui-sref="menu.home" id="login-button1" class="button button-stable  button-block">Log in</a>
+            <button id="login-button6" class="button button-positive  button-block icon ion-social-facebook" ng-click="FBlogin()">SignIn with Facebook</button>
+            <button id="login-button7" class="button button-assertive  button-block icon ion-social-google" href='https://accounts.google.com/o/oauth2/auth?response_type=code&client_id=904118659688-poln5vho7sntllgdls55gh36acde454g.apps.googleusercontent.com&redirect_uri=http://localhost:63342/Source/Homepage.html?_ijt=i16huqc3i8do4kgkitufkbkhss&scope=email&access_type=online&approval_prompt=auto'>SignIn with Google</button>
+			<a ui-sref="register" id="login-button1" class="button button-stable  button-block">Register</a>
+        </form>
+	</ion-content>
+</ion-view>

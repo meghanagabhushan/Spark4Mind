@@ -1,0 +1,27 @@
+<ion-view title="Articles" id="page12">
+    <ion-content padding="true" style="background: url(img/background.jpg) no-repeat center;background-size:cover;" class="has-header">
+
+
+
+
+      <h4>Enter a search keyword</h4>
+        <label class="item item-input" id="article-input1">
+            <input id="articleWord" type="text" placeholder="" style="border:2px black;">
+        </label>
+      
+
+
+    <button id="joinClass-button6" class="button button-positive  button-block" ng-click="searchArticle()" >Go</button>
+
+        <ion-list>
+      <ion-item ng-repeat="i in articlesResult" class="item item-text-wrap" >
+
+        <p>{{i.snippet}}</p>
+
+        </ion-item>
+    </ion-list>
+
+
+
+    </ion-content>
+</ion-view>

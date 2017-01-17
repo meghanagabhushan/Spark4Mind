@@ -1,0 +1,26 @@
+<ion-view title="Forage for Books" id="page16">
+  <ion-content padding="true" style="background: url(img/background.jpg) no-repeat center;background-size:cover;" class="has-header">
+    <div class="spacer" style="width: 300px; height: 29px;"></div>
+
+      <ion-list id="login-list1">
+        <label class="item item-input" id="login-input1">
+          <input id="title" type="text" placeholder="Book Title">
+        </label>
+        <label class="item item-input" id="login-input2">
+          <input id="author" type="text" placeholder="Author">
+        </label>
+      </ion-list>
+      <div class="spacer" style="height: 40px;"></div>
+      <button id="search-button1" class="button button-stable  button-block" ng-click="searchBooks()" >Search</button>
+
+    <ion-list>
+      <ion-item ng-repeat="i in booksResult" class="item item-text-wrap" >
+
+        <p>{{i.volumeInfo.title}}</p>
+        <p>{{i.volumeInfo.description}}</p>
+
+      </ion-item>
+    </ion-list>
+
+  </ion-content>
+</ion-view>

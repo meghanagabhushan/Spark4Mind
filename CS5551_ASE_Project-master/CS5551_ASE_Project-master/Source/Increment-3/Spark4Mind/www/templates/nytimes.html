@@ -1,0 +1,99 @@
+<ion-view title="NYTimes" id="page14">
+    <ion-header-bar >
+        <div class="tabs-striped tabs-top tabs-background-balanced tabs-color-light">
+    <div class="tabs">
+
+      <a id="a1" class="tab-item" data-ng-click="refreshWorld()">
+        <i class="icon ion-ios-world"></i>
+        World
+      </a>
+
+    <a id="a2" class="tab-item" data-ng-click="refreshTech()">
+      <i class="icon ion-gear-a"></i>
+      Technology
+    </a>
+
+      <a id="a4" class="tab-item" data-ng-click="refreshSports()">
+        <i class="icon ion-ios-football"></i>
+        Sports
+      </a>
+      <a id="a5" class="tab-item" data-ng-click="refreshFashion()">
+        <i class="icon ion-bag"></i>
+        Fashion
+      </a>
+      <a id="a6" class="tab-item" data-ng-click="refreshDining()">
+        <i class="icon ion-pizza"></i>
+        Dining
+      </a>
+
+        </div>
+        </div>
+    </ion-header-bar>
+    <ion-content padding="true" style="background: url(img/background.jpg) no-repeat center;background-size:cover;" class="has-header">
+
+
+
+  <div id="world" class="clear-block" style="border-top-left-radius: 10px !important;border-top-right-radius: 10px !important;">
+        <ion-list>
+      <ion-item ng-repeat="i in worldResult" class="item item-text-wrap" >
+             <p>{{i.title}}</p>
+            <p>{{i.abstract}}</p>
+        </ion-item>
+    </ion-list>
+   </div>
+      <br>
+      <br>
+
+   <div id="technology" style="border-top-left-radius: 10px !important;border-top-right-radius: 10px !important;">
+        <ion-list>
+      <ion-item ng-repeat="i in techResult" class="item item-text-wrap" >
+             <p>{{i.title}}</p>
+            <p>{{i.abstract}}</p>
+        </ion-item>
+    </ion-list>
+
+        </div>
+        <br>
+        <br>
+
+      <div id="sports" style="border-top-left-radius: 10px !important;border-top-right-radius: 10px !important;">
+        <ion-list>
+          <ion-item ng-repeat="i in sportsResult" class="item item-text-wrap" >
+            <p>{{i.title}}</p>
+            <p>{{i.abstract}}</p>
+          </ion-item>
+        </ion-list>
+
+      </div>
+      <br>
+      <br>
+
+      <div id="fashion" style="border-top-left-radius: 10px !important;border-top-right-radius: 10px !important;">
+        <ion-list>
+          <ion-item ng-repeat="i in fashionResult" class="item item-text-wrap" >
+            <p>{{i.title}}</p>
+            <p>{{i.abstract}}</p>
+          </ion-item>
+        </ion-list>
+
+      </div>
+      <br>
+      <br>
+
+      <div id="dining" style="border-top-left-radius: 10px !important;border-top-right-radius: 10px !important;">
+        <ion-list>
+          <ion-item ng-repeat="i in diningResult" class="item item-text-wrap" >
+            <p>{{i.title}}</p>
+            <p>{{i.abstract}}</p>
+          </ion-item>
+        </ion-list>
+
+      </div>
+      <br>
+      <br>
+
+
+
+
+    </ion-content>
+</ion-view>

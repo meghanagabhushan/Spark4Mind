@@ -1,0 +1,36 @@
+<ion-view title="JoinClass" id="page10">
+    <ion-content padding="true" style="background: url(img/ocean_sand_beach.jpg) no-repeat center;background-size:cover;" class="has-header">
+      <form id="joinClass-form4" class="list">
+            <h4 style="color:black">Enter your city</h4>
+                                <input id="placeName" type="text" placeholder="" style="border:2px black;">
+                        <h4 style="color:black">Select your interest</h4>
+                         <select id="interestName"style="font-size:18px;" >
+                    <option selected>Dance class</option>
+                    <option>Music class</option>
+                    <option>Gym</option>
+					<option>Art class</option>
+					<option>Jazz class</option>
+					<option>Baseball class</option>
+                    <option>Yoga Class</option>
+                    <option>Meditation</option>
+                </select>
+           
+                
+        </form>
+        <button id="joinClass-button6" class="button button-positive  button-block" ng-click="getVenues()" >Join now!!</button>
+        <ion-list>
+      <ion-item ng-repeat="i in venueList" type="item-text-wrap" style="font-size: x-large; color: #5e5e5e; text-align: center; list-style: none; list-style-position:inside;" >
+             <a style="font-size: x-large; color: #5e5e5e; text-align: center;" ng-click="getReviews(i)">{{i.name}}</a>
+        </ion-item>
+    </ion-list>
+        <div id="listView">
+        <p ng-model="ReviewWithSentiment">
+
+            <TABLE BORDER=2 CELLPADDING=4> 
+                <TR> <TD style="color: blue;">Most recent review</TD> <TD>{{ReviewWithSentiment.reviewText}}</TD> </TR>
+                <TR> <TD style="color: blue;">Score of the review</TD> <TD>{{ReviewWithSentiment.score}}</TD> </TR>
+                <TR> <TH style="color: white;" COLSPAN=2 BGCOLOR="#445553">{{ReviewWithSentiment.reviewText}}</TH> </TR>
+            </TABLE>
+        </div>
+    </ion-content>
+</ion-view>

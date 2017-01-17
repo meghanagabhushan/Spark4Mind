@@ -1,0 +1,25 @@
+/* Empty. Add your own CSS if you like */
+html,body{
+    color: white;
+}
+.row{
+    margin: 0%;
+}
+.icon-video{
+    color:red;
+}
+.icon-gallery{
+    color:limegreen;
+}
+.icon-music{
+    color: darkorange;
+}
+.icon-news{
+    color: blueviolet;
+}
+.icon-article{
+    color: purple;
+}
+.icon-classes{
+    color: brown;
+}
